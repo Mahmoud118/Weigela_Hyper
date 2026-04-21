@@ -126,5 +126,5 @@ o	Spectral reflectance values for each band
 
 o	Cleaned matrix (samples × wavelengths) 
 
-o	PCA-transformed features for analysis
+o	PCA analysis
 
