@@ -11,6 +11,7 @@ To analyze spectral variability, Principal Component Analysis (PCA) is applied t
 **Project Structure**
 
 The pipeline consists of the following main components:
+
 **1. Data Preparation (Geospatial Setup)**
 
 
@@ -30,6 +31,7 @@ The pipeline consists of the following main components:
 •	Export results to structured CSV format for downstream analysis 
 
 Implemented using:
+
 •	spec_extract.py — core extraction script (GDAL-based) 
 
 •	envi_header_handler.py — ENVI metadata parsing and handling 
@@ -51,6 +53,7 @@ Implemented using:
 •	preprocess.ipynb 
 
 **Requirements**
+
 •	Python 3.x 
 •	GDAL (≥ 3.x recommended) 
 Core Libraries
@@ -63,11 +66,13 @@ Core Libraries
 •	argparse 
 
 **Analysis**
+
 •	IsolationForest (outlier detection) 
 •	StandardScaler (feature scaling) 
 •	PCA (dimensionality reduction) 
 
 **Installation**
+
 Clone the repository:
 git clone https://github.com/Mahmoud118/Weigela_Hyper
 cd Weigela_Hyper
@@ -75,6 +80,7 @@ Install dependencies:
 pip install -r requirements.txt
 
 **Usage**
+
 Run the spectral extraction script:
 python spec_extract.py \
   -r Calib_K00256 \
@@ -84,6 +90,7 @@ python spec_extract.py \
   -l Calib_K00256
 
 Parameters
+
 •	-r : Path to the multiband raster image 
 •	-p : Path to the polygon shapefile 
 •	-f : Attribute field used as polygon ID 
@@ -91,6 +98,7 @@ Parameters
 •	-l : Flightline or dataset identifier 
 
 **Output**
+
 •	CSV file containing: 
 o	Plot/region IDs 
 o	Spectral reflectance values for each band 
