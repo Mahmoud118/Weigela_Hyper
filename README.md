@@ -1,5 +1,6 @@
 **README**
 
+
 **Overview**
 
 This repository provides an end-to-end pipeline for processing hyperspectral imagery and extracting pixel-level spectral data from defined regions of interest (ROIs). The workflow integrates ENVI header handling and automated spectral extraction using Python.
@@ -7,6 +8,7 @@ This repository provides an end-to-end pipeline for processing hyperspectral ima
 Beyond extraction, the pipeline includes data cleaning and analysis. Extracted spectral data is filtered using Isolation Forest to remove outliers, then reorganized into a structured matrix suitable for multivariate analysis. Each row represents an individual plant observation, and each column corresponds to a spectral reflectance variable (wavelength).
 
 To analyze spectral variability, Principal Component Analysis (PCA) is applied to reduce dimensionality and capture dominant patterns associated with plant water stress.
+
 
 **Project Structure**
 
@@ -52,6 +54,7 @@ Implemented using:
 
 •	preprocess.ipynb 
 
+
 **Requirements**
 
 •	Python 3.x 
@@ -65,6 +68,7 @@ Core Libraries
 •	GDAL / osgeo 
 •	argparse 
 
+
 **Analysis**
 
 •	IsolationForest (outlier detection) 
@@ -73,13 +77,18 @@ Core Libraries
 
 •	PCA (dimensionality reduction) 
 
+
 **Installation**
 
 Clone the repository:
 git clone https://github.com/Mahmoud118/Weigela_Hyper
+
 cd Weigela_Hyper
+
 Install dependencies:
+
 pip install -r requirements.txt
+
 
 **Usage**
 
@@ -90,6 +99,7 @@ python spec_extract.py \
   -f Plot_ID \
   -c 01_extraction.csv \
   -l Calib_K00256
+
 
 **Parameters**
 
@@ -102,6 +112,7 @@ python spec_extract.py \
 •	-c : Output CSV file 
 
 •	-l : Flightline or dataset identifier 
+
 
 **Output**
 
