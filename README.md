@@ -92,15 +92,23 @@ python spec_extract.py \
 **Parameters**
 
 •	-r : Path to the multiband raster image 
+
 •	-p : Path to the polygon shapefile 
+
 •	-f : Attribute field used as polygon ID 
+
 •	-c : Output CSV file 
+
 •	-l : Flightline or dataset identifier 
 
 **Output**
+
 •	CSV file containing: 
+
 o	Plot/region IDs 
+
 o	Spectral reflectance values for each band 
+
 •	Preprocessed dataset: 
 
 o	Cleaned matrix (samples × wavelengths) 
