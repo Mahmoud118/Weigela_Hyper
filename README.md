@@ -68,7 +68,9 @@ Core Libraries
 **Analysis**
 
 •	IsolationForest (outlier detection) 
+
 •	StandardScaler (feature scaling) 
+
 •	PCA (dimensionality reduction) 
 
 **Installation**
