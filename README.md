@@ -89,13 +89,18 @@ python spec_extract.py \
   -c 01_extraction.csv \
   -l Calib_K00256
 
-Parameters
+**Parameters**
 
 •	-r : Path to the multiband raster image 
+
 •	-p : Path to the polygon shapefile 
+
 •	-f : Attribute field used as polygon ID 
+
 •	-c : Output CSV file 
+
 •	-l : Flightline or dataset identifier 
+
 
 **Output**
 
