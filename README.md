@@ -98,13 +98,9 @@ python spec_extract.py \
 •	-l : Flightline or dataset identifier 
 
 **Output**
-
 •	CSV file containing: 
-
 o	Plot/region IDs 
-
 o	Spectral reflectance values for each band 
-
 •	Preprocessed dataset: 
 
 o	Cleaned matrix (samples × wavelengths) 
