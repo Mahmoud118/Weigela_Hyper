@@ -1,13 +1,17 @@
 **README**
+
 **Overview**
+
 This repository provides an end-to-end pipeline for processing hyperspectral imagery and extracting pixel-level spectral data from defined regions of interest (ROIs). The workflow integrates ENVI header handling and automated spectral extraction using Python.
 Beyond extraction, the pipeline includes data cleaning and analysis. Extracted spectral data is filtered using Isolation Forest to remove outliers, then reorganized into a structured matrix suitable for multivariate analysis. Each row represents an individual plant observation, and each column corresponds to a spectral reflectance variable (wavelength).
 To analyze spectral variability, Principal Component Analysis (PCA) is applied to reduce dimensionality and capture dominant patterns associated with plant water stress.
 
 **Project Structure**
+
 The pipeline consists of the following main components:
 **1. Data Preparation (Geospatial Setup)**
-•	Export ENVI header files 
+
+•	Export ENVI header files
 •	Define regions of interest (ROIs) using shapefiles 
 •	Annotate plots using GIS tools (e.g., QGIS) 
 
