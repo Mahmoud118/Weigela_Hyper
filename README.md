@@ -34,11 +34,11 @@ The pipeline consists of the following main components:
 
 Implemented using:
 
-•	spec_extract.py — core extraction script (GDAL-based) 
+•	spec_extract.py   core extraction script (GDAL-based) 
 
-•	envi_header_handler.py — ENVI metadata parsing and handling 
+•	envi_header_handler.py   ENVI metadata parsing and handling 
 
-•	extract_spectral_data.ipynb — interactive workflow execution 
+•	extract_spectral_data.ipynb   interactive workflow execution 
 
 **3. Data Preprocessing & Analysis**
 
