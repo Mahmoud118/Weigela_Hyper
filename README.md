@@ -13,6 +13,7 @@ To analyze spectral variability, Principal Component Analysis (PCA) is applied t
 The pipeline consists of the following main components:
 **1. Data Preparation (Geospatial Setup)**
 
+
 •	Export ENVI header files
 
 •	Define regions of interest (ROIs) using shapefiles 
@@ -21,6 +22,7 @@ The pipeline consists of the following main components:
 
 
 **2. Spectral Data Extraction**
+
 •	Extract pixel-level reflectance values across all spectral bands 
 
 •	Associate each pixel with its corresponding plot/region ID 
@@ -35,11 +37,17 @@ Implemented using:
 •	extract_spectral_data.ipynb — interactive workflow execution 
 
 **3. Data Preprocessing & Analysis**
+
 •	Clean extracted data and remove noise using Isolation Forest 
+
 •	Standardize and normalize spectral features 
+
 •	Restructure dataset into a matrix format (samples × wavelengths) 
+
 •	Apply PCA for dimensionality reduction and feature extraction 
+
 Implemented using:
+
 •	preprocess.ipynb 
 
 **Requirements**
